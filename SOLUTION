@@ -3,16 +3,25 @@
 
 Kernel System Calls
 -------------------
-this create a directory in which there is a file comtaining the following sentence : "Here you go ... Tell me what I d"
+this create a directory in which there is a file containing the following sentence : "Here you go ... Tell me what I d"
 
 
 
 Broken Symlink
 -------------------
-<Your Answer>
-
+latest-backup.obj file, it cannot find the file it points to because its path has changed and the soft link is broke.
+the solution is we will have to move the file backup-2024-06-21.obj to the same folder where latest-backup.obj is
+located , or creating a new link to the new path.
+1. mv backup-2024-06-21.obj backups/
+2. ln -s ../$FILENAME latest-backup.obj
 
 
 Binary Numbers
 --------------
-<Your Answer>
+1. 111 = 7 , 100 = 4 , 10110 = 22
+2. 0-255
+3. if we have 9 bits binary number and we want to differentiate between negative and positive numbers between -255 and
+255 ,we will use the 9 bit from right to left . if the 9 bit equal 1 this number is negative and if the 9 bit equal 0
+positive.
+4.for floating point , i suggest that 4 bits on the right represent the number after the point and 4 bits on the left
+represent the whole number.
